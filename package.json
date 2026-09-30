@@ -1,0 +1,10 @@
+{
+  "name": "personality-horoscope",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "fetch:ipip": "node scripts/fetch-ipip.mjs"
+  },
+  "engines": { "node": ">=22" }
+}
