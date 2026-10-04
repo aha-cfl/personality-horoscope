@@ -1,8 +1,8 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { reverseKey, scoreScales, standardize, scoreProfile } from '../engine/score.js';
-import { reliableDifference } from '../engine/diff.js';
-import { normalCdf, percentileFromZ } from '../engine/stats.js';
+import {
+  reverseKey, scoreScales, standardize, scoreProfile, reliableDifference, normalCdf, percentileFromZ,
+} from '../engine/score.js';
 import { longestRun, buildBalancedPairs, acquiescenceIndex, validityReport } from '../engine/validity.js';
 import { items, norms, fill } from './fixtures/synthetic.js';
 

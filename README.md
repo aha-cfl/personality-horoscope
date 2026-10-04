@@ -3,9 +3,10 @@
 Astrology chart reader + firewalled personality-measurement module. Educational, not clinical.
 
 ## Layout
-- `engine/` — scoring (`score.js`), reliable differences (`diff.js`), validity flags (`validity.js`), data validators (`schema.js`). Pure functions, no I/O.
+- `engine/` — `score.js` (scoring, CIs, reliable differences), `validity.js` (answer-pattern flags), `schema.js` (data validators). Pure functions, no I/O.
 - `data/` — items, norms, sources, content (added once sources are fetched and verified).
 - `scripts/fetch-ipip.mjs` — archives IPIP pages verbatim (raw HTML + sha256) into `data/raw/`.
+- `ui/` — page sources; `npm run build` inlines `/engine` into `dist/*.html` (single files, open by double-click).
 - `tests/` — `npm test` (node:test). `tests/fixtures/` holds synthetic items only.
 
 ## Scoring conventions
